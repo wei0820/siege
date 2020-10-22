@@ -15,5 +15,6 @@ target 'siege' do
   target 'siegeUITests' do
     # Pods for testing
   end
+  pod 'Firebase'
 
 end
