@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7124B2FC4FF487653B469686 /* Pods_siege_siegeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5015500B2C80576022EB9F44 /* Pods_siege_siegeUITests.framework */; };
 		8E80C0392541969F002A7C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C0382541969F002A7C15 /* AppDelegate.swift */; };
 		8E80C03B2541969F002A7C15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C03A2541969F002A7C15 /* SceneDelegate.swift */; };
 		8E80C03D2541969F002A7C15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C03C2541969F002A7C15 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		8E80C045254196A1002A7C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E80C043254196A1002A7C15 /* LaunchScreen.storyboard */; };
 		8E80C050254196A1002A7C15 /* siegeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C04F254196A1002A7C15 /* siegeTests.swift */; };
 		8E80C05B254196A1002A7C15 /* siegeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C05A254196A1002A7C15 /* siegeUITests.swift */; };
+		A410852D8765DE399B0FE184 /* Pods_siegeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */; };
+		B467E3AAF3D674133F6C2D48 /* Pods_siege.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C694F8D03E6E49BA7B113 /* Pods_siege.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E80C0352541969F002A7C15 /* siege.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siege.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		265797C10548F3C8714730A3 /* Pods-siege.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege.release.xcconfig"; path = "Target Support Files/Pods-siege/Pods-siege.release.xcconfig"; sourceTree = "<group>"; };
+		38B3E59C2436DF06A03F8B1A /* Pods-siege-siegeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege-siegeUITests.debug.xcconfig"; path = "Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C4C694F8D03E6E49BA7B113 /* Pods_siege.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siege.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5015500B2C80576022EB9F44 /* Pods_siege_siegeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siege_siegeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E80C0352541969F002A7C15 /* 我的旅遊地圖.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我的旅遊地圖.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E80C0382541969F002A7C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E80C03A2541969F002A7C15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8E80C03C2541969F002A7C15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		8E80C056254196A1002A7C15 /* siegeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = siegeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E80C05A254196A1002A7C15 /* siegeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siegeUITests.swift; sourceTree = "<group>"; };
 		8E80C05C254196A1002A7C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siegeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDCAA5A3A5ED7E0A738E200E /* Pods-siege-siegeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege-siegeUITests.release.xcconfig"; path = "Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C1929A7321C3C929141AE33C /* Pods-siege.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege.debug.xcconfig"; path = "Target Support Files/Pods-siege/Pods-siege.debug.xcconfig"; sourceTree = "<group>"; };
+		C7558304E5B222B0ACEFCABC /* Pods-siegeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siegeTests.release.xcconfig"; path = "Target Support Files/Pods-siegeTests/Pods-siegeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E398591F4A8EED712B028734 /* Pods-siegeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siegeTests.debug.xcconfig"; path = "Target Support Files/Pods-siegeTests/Pods-siegeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B467E3AAF3D674133F6C2D48 /* Pods_siege.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A410852D8765DE399B0FE184 /* Pods_siegeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7124B2FC4FF487653B469686 /* Pods_siege_siegeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43604CFDAA5E494664342F07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C4C694F8D03E6E49BA7B113 /* Pods_siege.framework */,
+				5015500B2C80576022EB9F44 /* Pods_siege_siegeUITests.framework */,
+				9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79129A6B3FDA1681F9154C3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1929A7321C3C929141AE33C /* Pods-siege.debug.xcconfig */,
+				265797C10548F3C8714730A3 /* Pods-siege.release.xcconfig */,
+				38B3E59C2436DF06A03F8B1A /* Pods-siege-siegeUITests.debug.xcconfig */,
+				BDCAA5A3A5ED7E0A738E200E /* Pods-siege-siegeUITests.release.xcconfig */,
+				E398591F4A8EED712B028734 /* Pods-siegeTests.debug.xcconfig */,
+				C7558304E5B222B0ACEFCABC /* Pods-siegeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8E80C02C2541969F002A7C15 = {
 			isa = PBXGroup;
 			children = (
@@ -83,13 +121,15 @@
 				8E80C04E254196A1002A7C15 /* siegeTests */,
 				8E80C059254196A1002A7C15 /* siegeUITests */,
 				8E80C0362541969F002A7C15 /* Products */,
+				79129A6B3FDA1681F9154C3D /* Pods */,
+				43604CFDAA5E494664342F07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8E80C0362541969F002A7C15 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E80C0352541969F002A7C15 /* siege.app */,
+				8E80C0352541969F002A7C15 /* 我的旅遊地圖.app */,
 				8E80C04B254196A1002A7C15 /* siegeTests.xctest */,
 				8E80C056254196A1002A7C15 /* siegeUITests.xctest */,
 			);
@@ -135,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E80C05F254196A1002A7C15 /* Build configuration list for PBXNativeTarget "siege" */;
 			buildPhases = (
+				E3C8330BAD2BD9828D556D25 /* [CP] Check Pods Manifest.lock */,
 				8E80C0312541969F002A7C15 /* Sources */,
 				8E80C0322541969F002A7C15 /* Frameworks */,
 				8E80C0332541969F002A7C15 /* Resources */,
+				18B181E40A17ACB83DBFE420 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,13 +187,14 @@
 			);
 			name = siege;
 			productName = siege;
-			productReference = 8E80C0352541969F002A7C15 /* siege.app */;
+			productReference = 8E80C0352541969F002A7C15 /* 我的旅遊地圖.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8E80C04A254196A1002A7C15 /* siegeTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E80C062254196A1002A7C15 /* Build configuration list for PBXNativeTarget "siegeTests" */;
 			buildPhases = (
+				6408F0E3CF4C0CF24B3CBC42 /* [CP] Check Pods Manifest.lock */,
 				8E80C047254196A1002A7C15 /* Sources */,
 				8E80C048254196A1002A7C15 /* Frameworks */,
 				8E80C049254196A1002A7C15 /* Resources */,
@@ -170,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E80C065254196A1002A7C15 /* Build configuration list for PBXNativeTarget "siegeUITests" */;
 			buildPhases = (
+				A7BB9FEE7AD17ABFE4C7F29D /* [CP] Check Pods Manifest.lock */,
 				8E80C052254196A1002A7C15 /* Sources */,
 				8E80C053254196A1002A7C15 /* Frameworks */,
 				8E80C054254196A1002A7C15 /* Resources */,
+				453D3C3065D59CAFE426A020 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18B181E40A17ACB83DBFE420 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-siege/Pods-siege-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-siege/Pods-siege-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-siege/Pods-siege-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		453D3C3065D59CAFE426A020 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6408F0E3CF4C0CF24B3CBC42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-siegeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7BB9FEE7AD17ABFE4C7F29D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-siege-siegeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C8330BAD2BD9828D556D25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-siege-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E80C0312541969F002A7C15 /* Sources */ = {
@@ -432,8 +580,9 @@
 		};
 		8E80C060254196A1002A7C15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1929A7321C3C929141AE33C /* Pods-siege.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9SDG9LYLGC;
 				INFOPLIST_FILE = siege/Info.plist;
@@ -441,8 +590,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jackpan.siege;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpan.touristmap;
+				PRODUCT_NAME = "我的旅遊地圖";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,8 +599,9 @@
 		};
 		8E80C061254196A1002A7C15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 265797C10548F3C8714730A3 /* Pods-siege.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9SDG9LYLGC;
 				INFOPLIST_FILE = siege/Info.plist;
@@ -459,8 +609,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jackpan.siege;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpan.touristmap;
+				PRODUCT_NAME = "我的旅遊地圖";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +618,7 @@
 		};
 		8E80C063254196A1002A7C15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E398591F4A8EED712B028734 /* Pods-siegeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +641,7 @@
 		};
 		8E80C064254196A1002A7C15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7558304E5B222B0ACEFCABC /* Pods-siegeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +664,7 @@
 		};
 		8E80C066254196A1002A7C15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B3E59C2436DF06A03F8B1A /* Pods-siege-siegeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +685,7 @@
 		};
 		8E80C067254196A1002A7C15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDCAA5A3A5ED7E0A738E200E /* Pods-siege-siegeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
