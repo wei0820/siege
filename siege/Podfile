@@ -16,5 +16,6 @@ target 'siege' do
     # Pods for testing
   end
   pod 'Firebase'
+pod 'Google-Mobile-Ads-SDK'
 
 end

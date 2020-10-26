@@ -16,6 +16,7 @@
 		8E80C045254196A1002A7C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E80C043254196A1002A7C15 /* LaunchScreen.storyboard */; };
 		8E80C050254196A1002A7C15 /* siegeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C04F254196A1002A7C15 /* siegeTests.swift */; };
 		8E80C05B254196A1002A7C15 /* siegeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C05A254196A1002A7C15 /* siegeUITests.swift */; };
+		8E80C06B25469D86002A7C15 /* MGoogleAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C06A25469D86002A7C15 /* MGoogleAdsViewController.swift */; };
 		A410852D8765DE399B0FE184 /* Pods_siegeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */; };
 		B467E3AAF3D674133F6C2D48 /* Pods_siege.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C694F8D03E6E49BA7B113 /* Pods_siege.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		8E80C056254196A1002A7C15 /* siegeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = siegeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E80C05A254196A1002A7C15 /* siegeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siegeUITests.swift; sourceTree = "<group>"; };
 		8E80C05C254196A1002A7C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E80C06A25469D86002A7C15 /* MGoogleAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGoogleAdsViewController.swift; sourceTree = "<group>"; };
 		9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siegeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCAA5A3A5ED7E0A738E200E /* Pods-siege-siegeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege-siegeUITests.release.xcconfig"; path = "Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1929A7321C3C929141AE33C /* Pods-siege.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege.debug.xcconfig"; path = "Target Support Files/Pods-siege/Pods-siege.debug.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				8E80C041254196A1002A7C15 /* Assets.xcassets */,
 				8E80C043254196A1002A7C15 /* LaunchScreen.storyboard */,
 				8E80C046254196A1002A7C15 /* Info.plist */,
+				8E80C06A25469D86002A7C15 /* MGoogleAdsViewController.swift */,
 			);
 			path = siege;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			files = (
 				8E80C03D2541969F002A7C15 /* ViewController.swift in Sources */,
 				8E80C0392541969F002A7C15 /* AppDelegate.swift in Sources */,
+				8E80C06B25469D86002A7C15 /* MGoogleAdsViewController.swift in Sources */,
 				8E80C03B2541969F002A7C15 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
