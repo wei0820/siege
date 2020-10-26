@@ -9,18 +9,42 @@
 import Foundation
 import UIKit
 import GoogleMobileAds
-class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate{
+import CoreLocation
+
+class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLocationManagerDelegate {
     var adBannerView: GADBannerView!
+    var _locationManager : CLLocationManager!
 
     override func viewDidLoad() {
         
         setAdBanner()
-
+        
+        // 生成 CLLocationManager 這物件
+        _locationManager = CLLocationManager()
+        // 指定其代理 delegate 委任對象
+        _locationManager.delegate = self
+        /*  設置自身定位精準度 _locationManager.desiredAccuracy
+         *  設置移動距離精準度 _locationManager.distanceFilter
+         *      kCLLocationAccuracyBestForNavigation：精確度最高，適用於導航的定位。
+         *      kCLLocationAccuracyBest：精確度高。
+         *      kCLLocationAccuracyNearestTenMeters：精確度 10 公尺以內。
+         *      kCLLocationAccuracyHundredMeters：精確度 100 公尺以內。
+         *      kCLLocationAccuracyKilometer：精確度 1 公里以內。
+         *      kCLLocationAccuracyThreeKilometers：精確度 3 公里以內。
+         */
+        _locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        _locationManager.distanceFilter = kCLLocationAccuracyNearestTenMeters
+        _locationManager.requestAlwaysAuthorization()
+        _locationManager.requestWhenInUseAuthorization()
+        // 表示移動 10 公尺再更新座標資訊
+        _locationManager.distanceFilter = CLLocationDistance(10)
+        // 開始接收目前位置資訊
+        _locationManager.startUpdatingLocation()
     }
     
     
     func setAdBanner(){
-        let id = "ca-app-pub-7019441527375550/6672424835"
+        let id = "ca-app-pub-7019441527375550/9564992118"
         adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         adBannerView!.adUnitID = id
         adBannerView!.delegate = self
@@ -79,5 +103,50 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate{
                                 constant: 0)
         ])
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        // 取得目前的座標位置
+        let _curLocation = locations[0]
+        
+        // curLocation.coordinate.latitude 目前緯度
+        // curLocation.coordinate.longitude 目前經度
+        let _nowLocationCoordinate2D = CLLocationCoordinate2D(
+            latitude: _curLocation.coordinate.latitude,
+            longitude: _curLocation.coordinate.longitude
+        )
 
+        print("Jack",(_curLocation.coordinate.latitude))
+        print("Jack",reverseGeocodeLocation(_latitude: _curLocation.coordinate.latitude, _longitude:_curLocation.coordinate.longitude))
+
+    }
+     func reverseGeocodeLocation(_latitude: Double, _longitude: Double) -> Void {
+        let geoCoder = CLGeocoder()
+        let currentLocation = CLLocation(
+            latitude: _latitude,
+            longitude: _longitude
+        )
+        geoCoder.reverseGeocodeLocation(
+            currentLocation, completionHandler: {
+                (placemarks, error) -> Void in
+                if error != nil {
+                    // 這邊可以加入一些你的 Try Error 機制
+                    return
+                }
+                /*  name            街道地址
+                 *  country         國家
+                 *  province        省籍
+                 *  locality        城市
+                 *  sublocality     縣市、區
+                 *  route           街道、路名
+                 *  streetNumber    門牌號碼
+                 *  postalCode      郵遞區號
+                 */
+                if placemarks != nil && (placemarks?.count)! > 0{
+                    let placemark = (placemarks?[0])! as CLPlacemark
+                    //這邊拼湊轉回來的地址
+                    print("Jack",placemark.name)
+                }
+            }
+        )
+    }
 }
