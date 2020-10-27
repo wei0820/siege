@@ -14,6 +14,8 @@ import CoreLocation
 class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLocationManagerDelegate {
     var adBannerView: GADBannerView!
     var _locationManager : CLLocationManager!
+    var testAd: String = "ca-app-pub-3940256099942544/2934735716"
+    var productAd :String = "ca-app-pub-7019441527375550/9564992118"
 
     override func viewDidLoad() {
         
@@ -44,7 +46,7 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
     
     
     func setAdBanner(){
-        let id = "ca-app-pub-7019441527375550/9564992118"
+        let id = testAd
         adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         adBannerView!.adUnitID = id
         adBannerView!.delegate = self
@@ -59,7 +61,7 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
     
     // Called when an ad request failed.
     func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-        print((error.localizedDescription))
+        print("jack",(error.localizedDescription))
     }
     
     // Called just before presenting the user a full screen view, such as a browser, in response to
@@ -115,8 +117,8 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
             longitude: _curLocation.coordinate.longitude
         )
 
-        print("Jack",(_curLocation.coordinate.latitude))
-        print("Jack",reverseGeocodeLocation(_latitude: _curLocation.coordinate.latitude, _longitude:_curLocation.coordinate.longitude))
+        print("Jack",reverseGeocodeLocation(_latitude: _curLocation.coordinate.latitude, _longitude: _curLocation.coordinate.longitude))
+        
 
     }
      func reverseGeocodeLocation(_latitude: Double, _longitude: Double) -> Void {
@@ -145,6 +147,9 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
                     let placemark = (placemarks?[0])! as CLPlacemark
                     //這邊拼湊轉回來的地址
                     print("Jack",placemark.name)
+                }else{
+                    print("Jack","no add")
+
                 }
             }
         )
