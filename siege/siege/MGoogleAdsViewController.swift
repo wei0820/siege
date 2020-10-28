@@ -10,12 +10,14 @@ import Foundation
 import UIKit
 import GoogleMobileAds
 import CoreLocation
+import Network
 
 class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLocationManagerDelegate {
     var adBannerView: GADBannerView!
     var _locationManager : CLLocationManager!
     var testAd: String = "ca-app-pub-3940256099942544/2934735716"
     var productAd :String = "ca-app-pub-7019441527375550/9564992118"
+    
 
     override func viewDidLoad() {
         
@@ -46,7 +48,7 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
     
     
     func setAdBanner(){
-        let id = testAd
+        let id = productAd
         adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         adBannerView!.adUnitID = id
         adBannerView!.delegate = self
@@ -57,6 +59,9 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
         addBannerViewToView(bannerView)
         
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        _locationManager.stopUpdatingLocation();
     }
     
     // Called when an ad request failed.
