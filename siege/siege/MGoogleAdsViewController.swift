@@ -17,11 +17,12 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
     var _locationManager : CLLocationManager!
     var testAd: String = "ca-app-pub-3940256099942544/2934735716"
     var productAd :String = "ca-app-pub-7019441527375550/9564992118"
-    
+    let monitor = NWPathMonitor()
 
     override func viewDidLoad() {
         
         setAdBanner()
+        checkNetwork()
         
         // 生成 CLLocationManager 這物件
         _locationManager = CLLocationManager()
@@ -44,11 +45,28 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
         _locationManager.distanceFilter = CLLocationDistance(10)
         // 開始接收目前位置資訊
         _locationManager.startUpdatingLocation()
+        
+    }
+    func checkNetwork(){
+        monitor.pathUpdateHandler = { path in
+             if path.status == .satisfied {
+                print("jack","connected")
+                print("jack", path.usesInterfaceType(.wifi))
+                print("jack", path.usesInterfaceType(.cellular))
+
+               
+             } else {
+                print("jack","no connection")
+             }
+          }
+    
+          monitor.start(queue: DispatchQueue.global())
+        print("jack", monitor.currentPath.status)
+
     }
     
-    
     func setAdBanner(){
-        let id = productAd
+        let id = testAd
         adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         adBannerView!.adUnitID = id
         adBannerView!.delegate = self
@@ -152,9 +170,6 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
                     let placemark = (placemarks?[0])! as CLPlacemark
                     //這邊拼湊轉回來的地址
                     print("Jack",placemark.name)
-                }else{
-                    print("Jack","no add")
-
                 }
             }
         )
