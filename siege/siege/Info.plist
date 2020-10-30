@@ -16,6 +16,8 @@
         <key>NSAllowsArbitraryLoadsInWebContent</key>
         <true/>
     </dict>
+    <key>MGLMapboxAccessToken</key>
+    <string>pk.eyJ1IjoiamFja3BhbiIsImEiOiJjazFhMHpzZWsweHkwM2hvMWI2c3Y1aXplIn0.5qKlfQ6BnTR0pxY-3qsMtw</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
