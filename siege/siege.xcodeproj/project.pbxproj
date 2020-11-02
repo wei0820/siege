@@ -18,8 +18,11 @@
 		8E80C05B254196A1002A7C15 /* siegeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C05A254196A1002A7C15 /* siegeUITests.swift */; };
 		8E80C06B25469D86002A7C15 /* MGoogleAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C06A25469D86002A7C15 /* MGoogleAdsViewController.swift */; };
 		8E80C06D2546B861002A7C15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E80C06C2546B861002A7C15 /* GoogleService-Info.plist */; };
-		8E80C06F254AC15C002A7C15 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C06E254AC15B002A7C15 /* Mapbox.framework */; };
-		8E80C071254AC171002A7C15 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C070254AC171002A7C15 /* MapboxMobileEvents.framework */; };
+		8E80C07B254C154D002A7C15 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C079254C1548002A7C15 /* MapboxMobileEvents.framework */; };
+		8E80C07C254C154D002A7C15 /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C079254C1548002A7C15 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E80C07E254C154E002A7C15 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C077254C153E002A7C15 /* Mapbox.framework */; };
+		8E80C07F254C154E002A7C15 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C077254C153E002A7C15 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E80C087254FD9F0002A7C15 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C086254FD9F0002A7C15 /* MapViewController.swift */; };
 		A410852D8765DE399B0FE184 /* Pods_siegeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */; };
 		B467E3AAF3D674133F6C2D48 /* Pods_siege.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C694F8D03E6E49BA7B113 /* Pods_siege.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,21 @@
 			remoteInfo = siege;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E80C07D254C154D002A7C15 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8E80C07C254C154D002A7C15 /* MapboxMobileEvents.framework in Embed Frameworks */,
+				8E80C07F254C154E002A7C15 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		265797C10548F3C8714730A3 /* Pods-siege.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege.release.xcconfig"; path = "Target Support Files/Pods-siege/Pods-siege.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,8 +80,9 @@
 		8E80C05C254196A1002A7C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E80C06A25469D86002A7C15 /* MGoogleAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGoogleAdsViewController.swift; sourceTree = "<group>"; };
 		8E80C06C2546B861002A7C15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8E80C06E254AC15B002A7C15 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
-		8E80C070254AC171002A7C15 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
+		8E80C077254C153E002A7C15 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "../../../Downloads/mapbox-ios-sdk-dynamic-with-events/dynamic/Mapbox.framework"; sourceTree = "<group>"; };
+		8E80C079254C1548002A7C15 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxMobileEvents.framework; path = "../../../Downloads/mapbox-ios-sdk-dynamic-with-events/dynamic/MapboxMobileEvents.framework"; sourceTree = "<group>"; };
+		8E80C086254FD9F0002A7C15 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siegeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCAA5A3A5ED7E0A738E200E /* Pods-siege-siegeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege-siegeUITests.release.xcconfig"; path = "Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1929A7321C3C929141AE33C /* Pods-siege.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege.debug.xcconfig"; path = "Target Support Files/Pods-siege/Pods-siege.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,9 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E80C071254AC171002A7C15 /* MapboxMobileEvents.framework in Frameworks */,
+				8E80C07B254C154D002A7C15 /* MapboxMobileEvents.framework in Frameworks */,
 				B467E3AAF3D674133F6C2D48 /* Pods_siege.framework in Frameworks */,
-				8E80C06F254AC15C002A7C15 /* Mapbox.framework in Frameworks */,
+				8E80C07E254C154E002A7C15 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,13 +168,14 @@
 		8E80C0372541969F002A7C15 /* siege */ = {
 			isa = PBXGroup;
 			children = (
+				8E80C079254C1548002A7C15 /* MapboxMobileEvents.framework */,
+				8E80C077254C153E002A7C15 /* Mapbox.framework */,
 				8E80C0382541969F002A7C15 /* AppDelegate.swift */,
 				8E80C03A2541969F002A7C15 /* SceneDelegate.swift */,
 				8E80C03C2541969F002A7C15 /* ViewController.swift */,
 				8E80C03E2541969F002A7C15 /* Main.storyboard */,
+				8E80C086254FD9F0002A7C15 /* MapViewController.swift */,
 				8E80C041254196A1002A7C15 /* Assets.xcassets */,
-				8E80C070254AC171002A7C15 /* MapboxMobileEvents.framework */,
-				8E80C06E254AC15B002A7C15 /* Mapbox.framework */,
 				8E80C043254196A1002A7C15 /* LaunchScreen.storyboard */,
 				8E80C046254196A1002A7C15 /* Info.plist */,
 				8E80C06C2546B861002A7C15 /* GoogleService-Info.plist */,
@@ -194,6 +214,7 @@
 				8E80C0322541969F002A7C15 /* Frameworks */,
 				8E80C0332541969F002A7C15 /* Resources */,
 				18B181E40A17ACB83DBFE420 /* [CP] Embed Pods Frameworks */,
+				8E80C07D254C154D002A7C15 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -425,6 +446,7 @@
 				8E80C03D2541969F002A7C15 /* ViewController.swift in Sources */,
 				8E80C0392541969F002A7C15 /* AppDelegate.swift in Sources */,
 				8E80C06B25469D86002A7C15 /* MGoogleAdsViewController.swift in Sources */,
+				8E80C087254FD9F0002A7C15 /* MapViewController.swift in Sources */,
 				8E80C03B2541969F002A7C15 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

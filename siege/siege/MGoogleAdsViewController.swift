@@ -11,6 +11,7 @@ import UIKit
 import GoogleMobileAds
 import CoreLocation
 import Network
+import Toaster
 
 class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLocationManagerDelegate {
     var adBannerView: GADBannerView!
@@ -18,6 +19,8 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
     var testAd: String = "ca-app-pub-3940256099942544/2934735716"
     var productAd :String = "ca-app-pub-7019441527375550/9564992118"
     let monitor = NWPathMonitor()
+    var lat :Double = 0.0
+    var lon : Double = 0.0
 
     override func viewDidLoad() {
         
@@ -63,6 +66,23 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
           monitor.start(queue: DispatchQueue.global())
         print("jack", monitor.currentPath.status)
 
+    }
+    
+    
+    
+    func setToast(s:String){
+        Toast.init(text: s).show()
+    }
+    func dissmissView(){
+        dismiss(animated: true, completion: nil)
+        
+    }
+    func setJump(type:String){
+        
+        if let controller = storyboard?.instantiateViewController(withIdentifier: type) {
+            present(controller, animated: true, completion: nil)
+        }
+        
     }
     
     func setAdBanner(){
@@ -139,9 +159,14 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
             latitude: _curLocation.coordinate.latitude,
             longitude: _curLocation.coordinate.longitude
         )
-
+        
         print("Jack",reverseGeocodeLocation(_latitude: _curLocation.coordinate.latitude, _longitude: _curLocation.coordinate.longitude))
         
+        lat = _curLocation.coordinate.latitude
+        lon = _curLocation.coordinate.longitude
+        print("Jack",_curLocation.coordinate.latitude)
+        print("Jack",_curLocation.coordinate.longitude)
+
 
     }
      func reverseGeocodeLocation(_latitude: Double, _longitude: Double) -> Void {
@@ -173,5 +198,11 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
                 }
             }
         )
+    }
+    func getLat() -> Double{
+        return lat
+    }
+    func getLon() -> Double{
+        return lon
     }
 }

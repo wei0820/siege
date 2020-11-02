@@ -16,7 +16,8 @@ target 'siege' do
   end
 pod 'Firebase'
 pod 'Google-Mobile-Ads-SDK'
-pod 'Mapbox-iOS-SDK', '~> 6.2.2'
+
+pod 'Toaster'
 
 
 end

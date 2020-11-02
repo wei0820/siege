@@ -12,7 +12,6 @@ class ViewController: MGooogleAdsViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setLeftButton(s: "會員中心")
         setRightButton(s: "地圖")
     
@@ -31,6 +30,7 @@ class ViewController: MGooogleAdsViewController {
         self.navigationItem.leftBarButtonItem = LeftButton
     }
     @objc func setting() {
+        setJump(type: "map")
         
     }
     

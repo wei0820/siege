@@ -23,6 +23,21 @@
             </objects>
             <point key="canvasLocation" x="14" y="10"/>
         </scene>
+        <!--Map View Controller-->
+        <scene sceneID="zd2-BH-NEX">
+            <objects>
+                <viewController storyboardIdentifier="map" id="YjJ-Ek-5SD" customClass="MapViewController" customModule="我的旅遊地圖" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCW-Nl-jMP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="AXM-mr-tj2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W40-vq-aiF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.6" y="226.23688155922042"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="e7u-yf-vM0">
             <objects>

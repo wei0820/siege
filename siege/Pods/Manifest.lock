@@ -66,10 +66,12 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.11)
+  - Toaster (2.2.0)
 
 DEPENDENCIES:
   - Firebase
   - Google-Mobile-Ads-SDK
+  - Toaster
 
 SPEC REPOS:
   trunk:
@@ -85,6 +87,7 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - PromisesObjC
+    - Toaster
 
 SPEC CHECKSUMS:
   Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
@@ -99,7 +102,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
 
-PODFILE CHECKSUM: c260c9c5b2d0011bcdf5d82e2f86c5f850de8d11
+PODFILE CHECKSUM: 47d2d602062c9eda7c313bef6215413f67271148
 
 COCOAPODS: 1.10.0
