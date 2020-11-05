@@ -23,6 +23,7 @@
 		8E80C07E254C154E002A7C15 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C077254C153E002A7C15 /* Mapbox.framework */; };
 		8E80C07F254C154E002A7C15 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C077254C153E002A7C15 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E80C0892553D651002A7C15 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C0882553D651002A7C15 /* MapViewController.swift */; };
+		8E80C08B2553DBDE002A7C15 /* MemberCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C08A2553DBDE002A7C15 /* MemberCenterViewController.swift */; };
 		A410852D8765DE399B0FE184 /* Pods_siegeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */; };
 		B467E3AAF3D674133F6C2D48 /* Pods_siege.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C694F8D03E6E49BA7B113 /* Pods_siege.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		8E80C077254C153E002A7C15 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "../../../Downloads/mapbox-ios-sdk-dynamic-with-events/dynamic/Mapbox.framework"; sourceTree = "<group>"; };
 		8E80C079254C1548002A7C15 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxMobileEvents.framework; path = "../../../Downloads/mapbox-ios-sdk-dynamic-with-events/dynamic/MapboxMobileEvents.framework"; sourceTree = "<group>"; };
 		8E80C0882553D651002A7C15 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8E80C08A2553DBDE002A7C15 /* MemberCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterViewController.swift; sourceTree = "<group>"; };
 		9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siegeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCAA5A3A5ED7E0A738E200E /* Pods-siege-siegeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege-siegeUITests.release.xcconfig"; path = "Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1929A7321C3C929141AE33C /* Pods-siege.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege.debug.xcconfig"; path = "Target Support Files/Pods-siege/Pods-siege.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				8E80C046254196A1002A7C15 /* Info.plist */,
 				8E80C06C2546B861002A7C15 /* GoogleService-Info.plist */,
 				8E80C06A25469D86002A7C15 /* MGoogleAdsViewController.swift */,
+				8E80C08A2553DBDE002A7C15 /* MemberCenterViewController.swift */,
 			);
 			path = siege;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				8E80C0392541969F002A7C15 /* AppDelegate.swift in Sources */,
 				8E80C06B25469D86002A7C15 /* MGoogleAdsViewController.swift in Sources */,
 				8E80C0892553D651002A7C15 /* MapViewController.swift in Sources */,
+				8E80C08B2553DBDE002A7C15 /* MemberCenterViewController.swift in Sources */,
 				8E80C03B2541969F002A7C15 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
