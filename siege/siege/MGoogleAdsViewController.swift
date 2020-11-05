@@ -199,7 +199,7 @@ class MGooogleAdsViewController: UIViewController ,GADBannerViewDelegate, CLLoca
             }
         )
     }
-    func getLat() -> Double{
+     func getLat() -> Double{
         return lat
     }
     func getLon() -> Double{

@@ -11,32 +11,48 @@ import Mapbox
 
 class MapViewController: MGooogleAdsViewController , MGLMapViewDelegate{
 
+    @IBOutlet weak var map: MGLMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        map.setCenter(CLLocationCoordinate2DMake(25.034815, 121.564392), animated: false)
+        map.zoomLevel = 13
+        map.styleURL = MGLStyle.streetsStyleURL
+        map.delegate = self
+        map.showsUserLocation = true
+         
         
-        let mapView = MGLMapView(frame: view.bounds)
-        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        mapView.delegate = self
-         
-        mapView.styleURL = MGLStyle.outdoorsStyleURL
-         
-        // Mauna Kea, Hawaii
-        let center = CLLocationCoordinate2D(latitude: 25.0521804378019, longitude: 121.53867317285828)
-         
-        // Optionally set a starting point.
-        mapView.setCenter(center, zoomLevel: 7, direction: 0, animated: false)
-         
-        view.addSubview(mapView)
+        
+        
     }
+    
+    
+    @IBAction func closeview(_ sender: Any) {
+        dissmissView()
+    }
+    
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
-    // Wait for the map to load before initiating the first camera movement.
-     
-    // Create a camera that rotates around the same center point, rotating 180°.
-    // `fromDistance:` is meters above mean sea level that an eye would have to be in order to see what the map view is showing.
-    let camera = MGLMapCamera(lookingAtCenter: mapView.centerCoordinate, altitude: 4500, pitch: 15, heading: 180)
-     
-    // Animate the camera movement over 5 seconds.
-    mapView.setCamera(camera, withDuration: 5, animationTimingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
-    }
+          mapView.setCenter((mapView.userLocation?.coordinate)!, animated: false)
+      }
+    
+      func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
+          let camera = MGLMapCamera(lookingAtCenter: mapView.centerCoordinate, altitude: 4500, pitch: 15, heading: 180)
+          
+          // Animate the camera movement over 5 seconds.
+          mapView.setCamera(camera, withDuration: 5, animationTimingFunction: CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut))
+      }
+      
+      /*
+       // MARK: - Navigation
+       
+       // In a storyboard-based application, you will often want to do a little preparation before navigation
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       // Get the new view controller using segue.destination.
+       // Pass the selected object to the new view controller.
+       }
+       */
+      func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
+          style.localizeLabels(into: Locale(identifier: "zh-Tw"))
+          // Into the local language where a given feature is located
+      }
 
 }
