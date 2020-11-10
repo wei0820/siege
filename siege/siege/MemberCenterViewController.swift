@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import FirebaseUI
+import Firebase
+import FileProvider
 
 class MemberCenterViewController: MGooogleAdsViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
 

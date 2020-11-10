@@ -86,14 +86,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6CA-H2-mgh"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AsW-q7-27u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1322" y="644"/>
         </scene>
+        <!--Member Center View Controller-->
+        <scene sceneID="Hma-Rv-Ep5">
+            <objects>
+                <viewController storyboardIdentifier="member" id="kn5-xM-phP" customClass="MemberCenterViewController" customModule="我的旅遊地圖" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ro-Jk-ChF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="itD-ky-qHI">
+                                <rect key="frame" x="16" y="16" width="343" height="635"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baseline_account_circle_black_36pt_2x" translatesAutoresizingMaskIntoConstraints="NO" id="oso-Wd-0Zq">
+                                        <rect key="frame" x="72" y="8" width="199" height="198"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="198" id="72g-kO-E4h"/>
+                                            <constraint firstAttribute="width" constant="199" id="MdY-bu-G9W"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目前尚未登入 請先登入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eao-Xa-mDi">
+                                        <rect key="frame" x="16" y="260" width="327" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="6F4-lV-HPw"/>
+                                            <constraint firstAttribute="width" constant="327" id="hTR-ag-bxH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baseline_email_black_36pt_2x" translatesAutoresizingMaskIntoConstraints="NO" id="RtW-hU-3DW">
+                                        <rect key="frame" x="72" y="310" width="45" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="lkQ-tY-cLp"/>
+                                            <constraint firstAttribute="width" constant="45" id="yY6-70-OC6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8H-eL-zH5">
+                                        <rect key="frame" x="148" y="317" width="62" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Aff-Ja-ti6"/>
+                                            <constraint firstAttribute="width" constant="62" id="zP6-Sq-L4w"/>
+                                        </constraints>
+                                        <state key="normal" title="信箱登入">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="f8H-eL-zH5" firstAttribute="leading" secondItem="RtW-hU-3DW" secondAttribute="trailing" constant="31" id="13t-U2-sXU"/>
+                                    <constraint firstItem="f8H-eL-zH5" firstAttribute="top" secondItem="Eao-Xa-mDi" secondAttribute="bottom" constant="36" id="4i4-KB-NZA"/>
+                                    <constraint firstAttribute="trailing" secondItem="oso-Wd-0Zq" secondAttribute="trailing" constant="72" id="6LE-ih-mOu"/>
+                                    <constraint firstItem="oso-Wd-0Zq" firstAttribute="leading" secondItem="itD-ky-qHI" secondAttribute="leading" constant="72" id="8dK-tj-owZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eao-Xa-mDi" secondAttribute="trailing" id="Hy9-TG-111"/>
+                                    <constraint firstItem="RtW-hU-3DW" firstAttribute="leading" secondItem="itD-ky-qHI" secondAttribute="leading" constant="72" id="S65-QS-aNq"/>
+                                    <constraint firstItem="Eao-Xa-mDi" firstAttribute="leading" secondItem="itD-ky-qHI" secondAttribute="leading" constant="16" id="YYM-8I-0gy"/>
+                                    <constraint firstItem="RtW-hU-3DW" firstAttribute="top" secondItem="Eao-Xa-mDi" secondAttribute="bottom" constant="29" id="ZAD-OK-mjK"/>
+                                    <constraint firstItem="oso-Wd-0Zq" firstAttribute="top" secondItem="itD-ky-qHI" secondAttribute="top" constant="8" id="rK1-xK-dYO"/>
+                                    <constraint firstItem="Eao-Xa-mDi" firstAttribute="top" secondItem="oso-Wd-0Zq" secondAttribute="bottom" constant="54" id="wFM-x1-mns"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="itD-ky-qHI" firstAttribute="leading" secondItem="pCZ-Q7-wIw" secondAttribute="leading" constant="16" id="2qe-cm-vQW"/>
+                            <constraint firstItem="pCZ-Q7-wIw" firstAttribute="trailing" secondItem="itD-ky-qHI" secondAttribute="trailing" constant="16" id="HAJ-IL-pcJ"/>
+                            <constraint firstItem="itD-ky-qHI" firstAttribute="top" secondItem="pCZ-Q7-wIw" secondAttribute="top" constant="16" id="Qh0-ku-jcv"/>
+                            <constraint firstItem="pCZ-Q7-wIw" firstAttribute="bottom" secondItem="itD-ky-qHI" secondAttribute="bottom" constant="16" id="aVh-bb-ngo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pCZ-Q7-wIw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWU-Dw-Qjb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383.19999999999999" y="-689.5052473763119"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="baseline_account_circle_black_36pt_2x" width="72" height="72"/>
+        <image name="baseline_email_black_36pt_2x" width="72" height="72"/>
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="clear.fill" catalog="system" width="128" height="114"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>

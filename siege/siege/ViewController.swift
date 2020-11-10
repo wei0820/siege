@@ -48,7 +48,8 @@ class ViewController: MGooogleAdsViewController {
     }
     
     @objc func checkIn() {
-        
+        setJump(type: "member")
+
     }
 
 }

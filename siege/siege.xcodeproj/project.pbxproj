@@ -218,6 +218,7 @@
 				8E80C0332541969F002A7C15 /* Resources */,
 				18B181E40A17ACB83DBFE420 /* [CP] Embed Pods Frameworks */,
 				8E80C07D254C154D002A7C15 /* Embed Frameworks */,
+				C561D990B5A05CA45D474526 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +257,7 @@
 				8E80C053254196A1002A7C15 /* Frameworks */,
 				8E80C054254196A1002A7C15 /* Resources */,
 				453D3C3065D59CAFE426A020 /* [CP] Embed Pods Frameworks */,
+				4E2DFAC9C8465F0A6FF6C383 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,6 +375,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4E2DFAC9C8465F0A6FF6C383 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6408F0E3CF4C0CF24B3CBC42 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,6 +434,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C561D990B5A05CA45D474526 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-siege/Pods-siege-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-siege/Pods-siege-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-siege/Pods-siege-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E3C8330BAD2BD9828D556D25 /* [CP] Check Pods Manifest.lock */ = {
