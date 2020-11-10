@@ -137,6 +137,9 @@
                                         <state key="normal" title="信箱登入">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="isMailLogin:" destination="kn5-xM-phP" eventType="touchUpInside" id="gNu-hc-kz9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -153,20 +156,115 @@
                                     <constraint firstItem="Eao-Xa-mDi" firstAttribute="top" secondItem="oso-Wd-0Zq" secondAttribute="bottom" constant="54" id="wFM-x1-mns"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWy-7F-MTw">
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="2QP-AE-3rS">
+                                        <rect key="frame" x="51" y="8" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="hPS-cr-sm6"/>
+                                            <constraint firstAttribute="width" constant="240" id="r18-BW-2hB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H6a-rl-uIy">
+                                        <rect key="frame" x="8" y="313" width="327" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="HH0-WG-UoA"/>
+                                            <constraint firstAttribute="width" constant="327" id="bWs-10-jcG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="請輸入密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcT-gY-L5D">
+                                        <rect key="frame" x="8" y="363" width="327" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="6Ya-kI-ZAo"/>
+                                            <constraint firstAttribute="width" constant="327" id="Map-xi-EWI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2y-2F-8nb">
+                                        <rect key="frame" x="8" y="423" width="327" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="327" id="guf-VK-q8R"/>
+                                            <constraint firstAttribute="height" constant="30" id="mVh-8h-qhK"/>
+                                        </constraints>
+                                        <state key="normal" title="登入">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCh-Uz-6Ar">
+                                        <rect key="frame" x="8" y="472" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="327" id="J4b-Pa-ZUs"/>
+                                            <constraint firstAttribute="height" constant="30" id="PbV-mC-G6S"/>
+                                        </constraints>
+                                        <state key="normal" title="註冊"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pcT-gY-L5D" secondAttribute="trailing" constant="8" id="217-xl-n7v"/>
+                                    <constraint firstAttribute="trailing" secondItem="2QP-AE-3rS" secondAttribute="trailing" constant="52" id="2am-cR-5cC"/>
+                                    <constraint firstAttribute="trailing" secondItem="aCh-Uz-6Ar" secondAttribute="trailing" constant="8" id="GjA-1x-DW7"/>
+                                    <constraint firstItem="H6a-rl-uIy" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="8" id="O5g-YK-sly"/>
+                                    <constraint firstItem="p2y-2F-8nb" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="8" id="QLt-yr-nYa"/>
+                                    <constraint firstItem="aCh-Uz-6Ar" firstAttribute="top" secondItem="p2y-2F-8nb" secondAttribute="bottom" constant="19" id="RP2-kw-xej"/>
+                                    <constraint firstItem="aCh-Uz-6Ar" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="8" id="ShG-eN-vRw"/>
+                                    <constraint firstAttribute="trailing" secondItem="p2y-2F-8nb" secondAttribute="trailing" constant="8" id="YSA-NX-y3O"/>
+                                    <constraint firstItem="2QP-AE-3rS" firstAttribute="top" secondItem="UWy-7F-MTw" secondAttribute="top" constant="8" id="b12-pJ-vkW"/>
+                                    <constraint firstItem="pcT-gY-L5D" firstAttribute="top" secondItem="H6a-rl-uIy" secondAttribute="bottom" constant="16" id="hPz-ld-Evf"/>
+                                    <constraint firstItem="2QP-AE-3rS" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="51" id="iMV-uD-ch3"/>
+                                    <constraint firstItem="pcT-gY-L5D" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="8" id="kta-4E-ePC"/>
+                                    <constraint firstItem="H6a-rl-uIy" firstAttribute="top" secondItem="2QP-AE-3rS" secondAttribute="bottom" constant="65" id="s21-LM-NUJ"/>
+                                    <constraint firstItem="p2y-2F-8nb" firstAttribute="top" secondItem="pcT-gY-L5D" secondAttribute="bottom" constant="26" id="tiu-Il-Aus"/>
+                                    <constraint firstAttribute="trailing" secondItem="H6a-rl-uIy" secondAttribute="trailing" constant="8" id="xXc-bk-F3V"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="itD-ky-qHI" firstAttribute="leading" secondItem="pCZ-Q7-wIw" secondAttribute="leading" constant="16" id="2qe-cm-vQW"/>
+                            <constraint firstItem="UWy-7F-MTw" firstAttribute="leading" secondItem="pCZ-Q7-wIw" secondAttribute="leading" constant="16" id="EGU-9M-ARF"/>
                             <constraint firstItem="pCZ-Q7-wIw" firstAttribute="trailing" secondItem="itD-ky-qHI" secondAttribute="trailing" constant="16" id="HAJ-IL-pcJ"/>
                             <constraint firstItem="itD-ky-qHI" firstAttribute="top" secondItem="pCZ-Q7-wIw" secondAttribute="top" constant="16" id="Qh0-ku-jcv"/>
+                            <constraint firstItem="pCZ-Q7-wIw" firstAttribute="trailing" secondItem="UWy-7F-MTw" secondAttribute="trailing" constant="16" id="SS3-Sf-AfG"/>
                             <constraint firstItem="pCZ-Q7-wIw" firstAttribute="bottom" secondItem="itD-ky-qHI" secondAttribute="bottom" constant="16" id="aVh-bb-ngo"/>
+                            <constraint firstItem="pCZ-Q7-wIw" firstAttribute="bottom" secondItem="UWy-7F-MTw" secondAttribute="bottom" constant="20" id="o17-Sy-V1G"/>
+                            <constraint firstItem="UWy-7F-MTw" firstAttribute="top" secondItem="pCZ-Q7-wIw" secondAttribute="top" constant="20" id="xdg-8Z-RYM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pCZ-Q7-wIw"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="itD-ky-qHI"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="isMailLoginButton" destination="f8H-eL-zH5" id="Egt-is-3F8"/>
+                        <outlet property="isNoLoginView" destination="itD-ky-qHI" id="uOT-Nw-bjr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OWU-Dw-Qjb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-383.19999999999999" y="-689.5052473763119"/>
+        </scene>
+        <!--Mail Login View Controller-->
+        <scene sceneID="mtu-cL-1wH">
+            <objects>
+                <viewController storyboardIdentifier="mail" id="WsC-fF-oIg" customClass="MailLoginViewController" customModule="我的旅遊地圖" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gUZ-D0-Que">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="FnF-vI-q62"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xtd-Wh-96I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="-774"/>
         </scene>
     </scenes>
     <resources>
@@ -174,6 +272,7 @@
         <image name="baseline_email_black_36pt_2x" width="72" height="72"/>
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="clear.fill" catalog="system" width="128" height="114"/>
+        <image name="logo" width="1024" height="1024"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
     </resources>
 </document>

@@ -12,10 +12,17 @@ import Firebase
 import FileProvider
 
 class MemberCenterViewController: MGooogleAdsViewController {
+    
+    @IBOutlet weak var isNoLoginView: UIView!
+    @IBOutlet weak var isMailLoginButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-
+    @IBAction func isMailLogin(_ sender: Any) {
+        isNoLoginView.isHidden = true
+    }
+    
 }
