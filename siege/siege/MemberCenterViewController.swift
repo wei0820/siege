@@ -80,15 +80,47 @@ class MemberCenterViewController: MGooogleAdsViewController {
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if user != nil {
                 print("Jack",user?.email)
-                print("Jack",user?.uid)
+                print("Jack",user?.isEmailVerified)
                 
-
-            }else{
-
-                     
+                
 
             }
         }
     }
+    
+    
+    @IBAction func resetPasswordForMail(_ sender: Any) {
+        
+        let signUpAlert = UIAlertController(title: "忘記密碼", message: "發送重設密碼信件", preferredStyle: .alert)
+                   let saveAction = UIAlertAction(title: "發送", style: .default) { (action) in
+                       let emailSignUpTextField = signUpAlert.textFields![0]
+                    
+                    
+                    Auth.auth().sendPasswordReset(withEmail: emailSignUpTextField.text!) { error in
+                        if(error != nil){
+                            print("Jack",error?.localizedDescription)
+                        }
+                    }
+                
+                   }
+                   
+                   let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+                   
+                   signUpAlert.addTextField { (emailSignUpTextField) in
+                       emailSignUpTextField.placeholder = "請輸入Email"
+                   }
+                   signUpAlert.addAction(saveAction)
+                    signUpAlert.addAction(cancelAction)
+
+                   
+                   present(signUpAlert, animated: true, completion: nil)
+        
+        
+        
+        
+        
+        
+    }
+    
     
 }

@@ -209,6 +209,19 @@
                                             <action selector="signUpAction:" destination="kn5-xM-phP" eventType="touchUpInside" id="DV1-9e-Vrf"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alg-67-lsJ">
+                                        <rect key="frame" x="8" y="510" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="QbY-NB-Fv1"/>
+                                            <constraint firstAttribute="width" constant="327" id="vDF-MG-QUI"/>
+                                        </constraints>
+                                        <state key="normal" title="忘記密碼">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetPasswordForMail:" destination="kn5-xM-phP" eventType="touchUpInside" id="wlg-uW-eT9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -216,12 +229,15 @@
                                     <constraint firstAttribute="trailing" secondItem="2QP-AE-3rS" secondAttribute="trailing" constant="52" id="2am-cR-5cC"/>
                                     <constraint firstAttribute="trailing" secondItem="aCh-Uz-6Ar" secondAttribute="trailing" constant="8" id="GjA-1x-DW7"/>
                                     <constraint firstItem="H6a-rl-uIy" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="8" id="O5g-YK-sly"/>
+                                    <constraint firstAttribute="trailing" secondItem="Alg-67-lsJ" secondAttribute="trailing" constant="8" id="QJQ-dH-Kjm"/>
                                     <constraint firstItem="p2y-2F-8nb" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="8" id="QLt-yr-nYa"/>
                                     <constraint firstItem="aCh-Uz-6Ar" firstAttribute="top" secondItem="p2y-2F-8nb" secondAttribute="bottom" constant="19" id="RP2-kw-xej"/>
                                     <constraint firstItem="aCh-Uz-6Ar" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="8" id="ShG-eN-vRw"/>
                                     <constraint firstAttribute="trailing" secondItem="p2y-2F-8nb" secondAttribute="trailing" constant="8" id="YSA-NX-y3O"/>
+                                    <constraint firstItem="Alg-67-lsJ" firstAttribute="top" secondItem="aCh-Uz-6Ar" secondAttribute="bottom" constant="8" id="aIW-MH-tnE"/>
                                     <constraint firstItem="2QP-AE-3rS" firstAttribute="top" secondItem="UWy-7F-MTw" secondAttribute="top" constant="8" id="b12-pJ-vkW"/>
                                     <constraint firstItem="pcT-gY-L5D" firstAttribute="top" secondItem="H6a-rl-uIy" secondAttribute="bottom" constant="16" id="hPz-ld-Evf"/>
+                                    <constraint firstItem="Alg-67-lsJ" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="8" id="iJd-yC-RPG"/>
                                     <constraint firstItem="2QP-AE-3rS" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="51" id="iMV-uD-ch3"/>
                                     <constraint firstItem="pcT-gY-L5D" firstAttribute="leading" secondItem="UWy-7F-MTw" secondAttribute="leading" constant="8" id="kta-4E-ePC"/>
                                     <constraint firstItem="H6a-rl-uIy" firstAttribute="top" secondItem="2QP-AE-3rS" secondAttribute="bottom" constant="65" id="s21-LM-NUJ"/>
