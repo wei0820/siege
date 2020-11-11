@@ -202,6 +202,9 @@
                                             <constraint firstAttribute="height" constant="30" id="PbV-mC-G6S"/>
                                         </constraints>
                                         <state key="normal" title="註冊"/>
+                                        <connections>
+                                            <action selector="signUpAction:" destination="kn5-xM-phP" eventType="touchUpInside" id="DV1-9e-Vrf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
