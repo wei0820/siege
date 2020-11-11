@@ -194,6 +194,9 @@
                                         <state key="normal" title="登入">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginAction:" destination="kn5-xM-phP" eventType="touchUpInside" id="zRR-w9-cJP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCh-Uz-6Ar">
                                         <rect key="frame" x="8" y="472" width="327" height="30"/>
@@ -246,8 +249,11 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="emailLoginTextField" destination="H6a-rl-uIy" id="4hO-fU-n1Y"/>
                         <outlet property="isMailLoginButton" destination="f8H-eL-zH5" id="Egt-is-3F8"/>
+                        <outlet property="isMailLoginView" destination="UWy-7F-MTw" id="Iic-GT-e6O"/>
                         <outlet property="isNoLoginView" destination="itD-ky-qHI" id="uOT-Nw-bjr"/>
+                        <outlet property="passwordLoginTextField" destination="pcT-gY-L5D" id="x9T-Y4-fLF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OWU-Dw-Qjb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

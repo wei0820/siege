@@ -15,10 +15,25 @@ class MemberCenterViewController: MGooogleAdsViewController {
     
     @IBOutlet weak var isNoLoginView: UIView!
     @IBOutlet weak var isMailLoginButton: UIButton!
+    @IBOutlet weak var emailLoginTextField: UITextField!
     
-
+    @IBOutlet weak var passwordLoginTextField: UITextField!
+    
+    @IBOutlet weak var isMailLoginView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkMailLogin()
+    }
+    @IBAction func loginAction(_ sender: Any) {
+        Auth.auth().signIn(withEmail: emailLoginTextField.text!, password: passwordLoginTextField.text!) { (user, error) in
+             if (error != nil) {
+                 let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                 let defaultAction = UIAlertAction(title: "Error", style: .cancel, handler: nil)
+                 alert.addAction(defaultAction)
+                 self.present(alert, animated: true, completion: nil)
+             }
+         }
     }
     
     @IBAction func isMailLogin(_ sender: Any) {
@@ -59,6 +74,21 @@ class MemberCenterViewController: MGooogleAdsViewController {
                present(signUpAlert, animated: true, completion: nil)
         
         
+    }
+    
+    func checkMailLogin(){
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                print("Jack",user?.email)
+                print("Jack",user?.uid)
+                
+
+            }else{
+
+                     
+
+            }
+        }
     }
     
 }
