@@ -95,11 +95,13 @@ class MemberCenterViewController: MGooogleAdsViewController {
                    let saveAction = UIAlertAction(title: "發送", style: .default) { (action) in
                        let emailSignUpTextField = signUpAlert.textFields![0]
                     
-                    
                     Auth.auth().sendPasswordReset(withEmail: emailSignUpTextField.text!) { error in
-                        if(error != nil){
-                            print("Jack",error?.localizedDescription)
-                        }
+                          if (error != nil) {
+                                   let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                                   let defaultAction = UIAlertAction(title: "Error", style: .cancel, handler: nil)
+                                   alert.addAction(defaultAction)
+                                   self.present(alert, animated: true, completion: nil)
+                               }
                     }
                 
                    }
