@@ -144,8 +144,16 @@ class MemberCenterViewController: MGooogleAdsViewController {
             }
         })
         }
-
+    
+    
+    @IBAction func logoutAction(_ sender: Any) {
+    }
+    
+    
+    
         
+    @IBAction func deleteAccountAction(_ sender: Any) {
+    }
     
     
     
