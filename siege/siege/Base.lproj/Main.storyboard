@@ -271,17 +271,42 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd2-h9-PA5">
+                                        <rect key="frame" x="8" y="416" width="327" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="327" id="QqC-BE-G4H"/>
+                                            <constraint firstAttribute="height" constant="30" id="xWN-qG-Gf9"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="登出"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0k-Rg-mzp">
+                                        <rect key="frame" x="8" y="466" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EWo-Qb-HNM"/>
+                                            <constraint firstAttribute="width" constant="327" id="jru-0f-zXU"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="刪除帳戶"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="FRd-qi-17M" firstAttribute="top" secondItem="HOK-74-YT7" secondAttribute="bottom" constant="20" id="4OU-Fh-BJI"/>
                                     <constraint firstItem="lKh-kC-x7f" firstAttribute="top" secondItem="V37-gI-9J6" secondAttribute="top" constant="8" id="5sf-Ve-PON"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y0k-Rg-mzp" secondAttribute="trailing" constant="8" id="6sY-yR-PWp"/>
                                     <constraint firstItem="HOK-74-YT7" firstAttribute="top" secondItem="lKh-kC-x7f" secondAttribute="bottom" constant="55" id="7YJ-6A-Bko"/>
+                                    <constraint firstItem="Pd2-h9-PA5" firstAttribute="top" secondItem="FRd-qi-17M" secondAttribute="bottom" constant="51" id="Kgs-hU-lFt"/>
                                     <constraint firstAttribute="trailing" secondItem="lKh-kC-x7f" secondAttribute="trailing" constant="52" id="LSq-bn-n4b"/>
                                     <constraint firstItem="lKh-kC-x7f" firstAttribute="leading" secondItem="V37-gI-9J6" secondAttribute="leading" constant="51" id="MdY-DV-Km3"/>
+                                    <constraint firstItem="Pd2-h9-PA5" firstAttribute="leading" secondItem="V37-gI-9J6" secondAttribute="leading" constant="8" id="PR2-zI-kff"/>
                                     <constraint firstItem="FRd-qi-17M" firstAttribute="leading" secondItem="V37-gI-9J6" secondAttribute="leading" constant="8" id="gy6-U3-i2X"/>
                                     <constraint firstItem="HOK-74-YT7" firstAttribute="leading" secondItem="V37-gI-9J6" secondAttribute="leading" constant="8" id="l74-d0-bYZ"/>
                                     <constraint firstAttribute="trailing" secondItem="FRd-qi-17M" secondAttribute="trailing" constant="8" id="oXy-s5-rDg"/>
+                                    <constraint firstItem="Y0k-Rg-mzp" firstAttribute="top" secondItem="Pd2-h9-PA5" secondAttribute="bottom" constant="20" id="xQL-OX-4Z5"/>
+                                    <constraint firstItem="Y0k-Rg-mzp" firstAttribute="leading" secondItem="V37-gI-9J6" secondAttribute="leading" constant="8" id="xoQ-ZL-ApN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pd2-h9-PA5" secondAttribute="trailing" constant="8" id="ymc-QX-H87"/>
                                     <constraint firstAttribute="trailing" secondItem="HOK-74-YT7" secondAttribute="trailing" constant="8" id="zaS-S2-C5t"/>
                                 </constraints>
                             </view>
