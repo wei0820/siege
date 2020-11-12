@@ -13,6 +13,9 @@ import FileProvider
 
 class MemberCenterViewController: MGooogleAdsViewController {
     
+    @IBOutlet weak var idLabel: UILabel!
+    
+    @IBOutlet weak var mailLabel: UILabel!
     @IBOutlet weak var isNoLoginView: UIView!
     @IBOutlet weak var isMailLoginButton: UIButton!
     @IBOutlet weak var emailLoginTextField: UITextField!
@@ -20,6 +23,8 @@ class MemberCenterViewController: MGooogleAdsViewController {
     @IBOutlet weak var passwordLoginTextField: UITextField!
     
     @IBOutlet weak var isMailLoginView: UIView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,8 +84,12 @@ class MemberCenterViewController: MGooogleAdsViewController {
     func checkMailLogin(){
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if user != nil {
-                print("Jack",user?.email)
-                print("Jack",user?.isEmailVerified)
+                self.idLabel.text = "ID:" + user!.uid
+                self.mailLabel.text = "Mail:" + (user?.email)!
+        
+                self.isNoLoginView.isHidden = true
+                self.isMailLoginView.isHidden = true
+
                 
                 
 
@@ -123,6 +132,22 @@ class MemberCenterViewController: MGooogleAdsViewController {
         
         
     }
+    // 重新驗證用戶
+    func reAuthen(email:String ,password: String){
+        let user = Auth.auth().currentUser
+        var credential: AuthCredential = EmailAuthProvider.credential(withEmail: email, password: password)
+        user?.reauthenticateAndRetrieveData(with: credential, completion: {(authResult, error) in
+            if let error = error {
+                // An error happened.
+            }else{
+                // User re-authenticated.
+            }
+        })
+        }
+
+        
+    
+    
     
     
 }

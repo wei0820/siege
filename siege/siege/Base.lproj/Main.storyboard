@@ -245,15 +245,59 @@
                                     <constraint firstAttribute="trailing" secondItem="H6a-rl-uIy" secondAttribute="trailing" constant="8" id="xXc-bk-F3V"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V37-gI-9J6">
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lKh-kC-x7f">
+                                        <rect key="frame" x="51" y="8" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="APC-tj-CHp"/>
+                                            <constraint firstAttribute="width" constant="240" id="OvO-7e-dSA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOK-74-YT7">
+                                        <rect key="frame" x="8" y="303" width="327" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRd-qi-17M">
+                                        <rect key="frame" x="8" y="344" width="327" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="SYI-bo-mnM"/>
+                                            <constraint firstAttribute="width" constant="327" id="g2g-RM-X60"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="FRd-qi-17M" firstAttribute="top" secondItem="HOK-74-YT7" secondAttribute="bottom" constant="20" id="4OU-Fh-BJI"/>
+                                    <constraint firstItem="lKh-kC-x7f" firstAttribute="top" secondItem="V37-gI-9J6" secondAttribute="top" constant="8" id="5sf-Ve-PON"/>
+                                    <constraint firstItem="HOK-74-YT7" firstAttribute="top" secondItem="lKh-kC-x7f" secondAttribute="bottom" constant="55" id="7YJ-6A-Bko"/>
+                                    <constraint firstAttribute="trailing" secondItem="lKh-kC-x7f" secondAttribute="trailing" constant="52" id="LSq-bn-n4b"/>
+                                    <constraint firstItem="lKh-kC-x7f" firstAttribute="leading" secondItem="V37-gI-9J6" secondAttribute="leading" constant="51" id="MdY-DV-Km3"/>
+                                    <constraint firstItem="FRd-qi-17M" firstAttribute="leading" secondItem="V37-gI-9J6" secondAttribute="leading" constant="8" id="gy6-U3-i2X"/>
+                                    <constraint firstItem="HOK-74-YT7" firstAttribute="leading" secondItem="V37-gI-9J6" secondAttribute="leading" constant="8" id="l74-d0-bYZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="FRd-qi-17M" secondAttribute="trailing" constant="8" id="oXy-s5-rDg"/>
+                                    <constraint firstAttribute="trailing" secondItem="HOK-74-YT7" secondAttribute="trailing" constant="8" id="zaS-S2-C5t"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="pCZ-Q7-wIw" firstAttribute="trailing" secondItem="V37-gI-9J6" secondAttribute="trailing" constant="16" id="0vt-gU-bBJ"/>
                             <constraint firstItem="itD-ky-qHI" firstAttribute="leading" secondItem="pCZ-Q7-wIw" secondAttribute="leading" constant="16" id="2qe-cm-vQW"/>
+                            <constraint firstItem="V37-gI-9J6" firstAttribute="top" secondItem="pCZ-Q7-wIw" secondAttribute="top" constant="20" id="5No-ne-D8c"/>
                             <constraint firstItem="UWy-7F-MTw" firstAttribute="leading" secondItem="pCZ-Q7-wIw" secondAttribute="leading" constant="16" id="EGU-9M-ARF"/>
                             <constraint firstItem="pCZ-Q7-wIw" firstAttribute="trailing" secondItem="itD-ky-qHI" secondAttribute="trailing" constant="16" id="HAJ-IL-pcJ"/>
                             <constraint firstItem="itD-ky-qHI" firstAttribute="top" secondItem="pCZ-Q7-wIw" secondAttribute="top" constant="16" id="Qh0-ku-jcv"/>
                             <constraint firstItem="pCZ-Q7-wIw" firstAttribute="trailing" secondItem="UWy-7F-MTw" secondAttribute="trailing" constant="16" id="SS3-Sf-AfG"/>
+                            <constraint firstItem="pCZ-Q7-wIw" firstAttribute="bottom" secondItem="V37-gI-9J6" secondAttribute="bottom" constant="20" id="TnV-CY-S2N"/>
                             <constraint firstItem="pCZ-Q7-wIw" firstAttribute="bottom" secondItem="itD-ky-qHI" secondAttribute="bottom" constant="16" id="aVh-bb-ngo"/>
+                            <constraint firstItem="V37-gI-9J6" firstAttribute="leading" secondItem="pCZ-Q7-wIw" secondAttribute="leading" constant="16" id="i1e-EL-A7Q"/>
                             <constraint firstItem="pCZ-Q7-wIw" firstAttribute="bottom" secondItem="UWy-7F-MTw" secondAttribute="bottom" constant="20" id="o17-Sy-V1G"/>
                             <constraint firstItem="UWy-7F-MTw" firstAttribute="top" secondItem="pCZ-Q7-wIw" secondAttribute="top" constant="20" id="xdg-8Z-RYM"/>
                         </constraints>
@@ -261,14 +305,17 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="itD-ky-qHI"/>
+                                <exclude reference="UWy-7F-MTw"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="emailLoginTextField" destination="H6a-rl-uIy" id="4hO-fU-n1Y"/>
+                        <outlet property="idLabel" destination="HOK-74-YT7" id="UCN-7X-Rvd"/>
                         <outlet property="isMailLoginButton" destination="f8H-eL-zH5" id="Egt-is-3F8"/>
                         <outlet property="isMailLoginView" destination="UWy-7F-MTw" id="Iic-GT-e6O"/>
                         <outlet property="isNoLoginView" destination="itD-ky-qHI" id="uOT-Nw-bjr"/>
+                        <outlet property="mailLabel" destination="FRd-qi-17M" id="KTT-WF-Zr8"/>
                         <outlet property="passwordLoginTextField" destination="pcT-gY-L5D" id="x9T-Y4-fLF"/>
                     </connections>
                 </viewController>

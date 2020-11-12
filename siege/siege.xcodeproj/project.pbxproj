@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7124B2FC4FF487653B469686 /* Pods_siege_siegeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5015500B2C80576022EB9F44 /* Pods_siege_siegeUITests.framework */; };
+		8E66F38C255D14680090E131 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E66F388255D13D50090E131 /* Mapbox.framework */; };
+		8E66F38D255D14680090E131 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E66F388255D13D50090E131 /* Mapbox.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8E66F38E255D146B0090E131 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E66F389255D13D50090E131 /* MapboxMobileEvents.framework */; };
+		8E66F38F255D146B0090E131 /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E66F389255D13D50090E131 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8E80C0392541969F002A7C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C0382541969F002A7C15 /* AppDelegate.swift */; };
 		8E80C03B2541969F002A7C15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C03A2541969F002A7C15 /* SceneDelegate.swift */; };
 		8E80C03D2541969F002A7C15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C03C2541969F002A7C15 /* ViewController.swift */; };
@@ -18,10 +22,6 @@
 		8E80C05B254196A1002A7C15 /* siegeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C05A254196A1002A7C15 /* siegeUITests.swift */; };
 		8E80C06B25469D86002A7C15 /* MGoogleAdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C06A25469D86002A7C15 /* MGoogleAdsViewController.swift */; };
 		8E80C06D2546B861002A7C15 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E80C06C2546B861002A7C15 /* GoogleService-Info.plist */; };
-		8E80C07B254C154D002A7C15 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C079254C1548002A7C15 /* MapboxMobileEvents.framework */; };
-		8E80C07C254C154D002A7C15 /* MapboxMobileEvents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C079254C1548002A7C15 /* MapboxMobileEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8E80C07E254C154E002A7C15 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C077254C153E002A7C15 /* Mapbox.framework */; };
-		8E80C07F254C154E002A7C15 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E80C077254C153E002A7C15 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E80C0892553D651002A7C15 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C0882553D651002A7C15 /* MapViewController.swift */; };
 		8E80C08B2553DBDE002A7C15 /* MemberCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C08A2553DBDE002A7C15 /* MemberCenterViewController.swift */; };
 		8E80C090255A7941002A7C15 /* MailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C08F255A7941002A7C15 /* MailLoginViewController.swift */; };
@@ -53,8 +53,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8E80C07C254C154D002A7C15 /* MapboxMobileEvents.framework in Embed Frameworks */,
-				8E80C07F254C154E002A7C15 /* Mapbox.framework in Embed Frameworks */,
+				8E66F38F255D146B0090E131 /* MapboxMobileEvents.framework in Embed Frameworks */,
+				8E66F38D255D14680090E131 /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +66,8 @@
 		38B3E59C2436DF06A03F8B1A /* Pods-siege-siegeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege-siegeUITests.debug.xcconfig"; path = "Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C4C694F8D03E6E49BA7B113 /* Pods_siege.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siege.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5015500B2C80576022EB9F44 /* Pods_siege_siegeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siege_siegeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E66F388255D13D50090E131 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		8E66F389255D13D50090E131 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxMobileEvents.framework; sourceTree = "<group>"; };
 		8E80C0352541969F002A7C15 /* 我的旅遊地圖.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我的旅遊地圖.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E80C0382541969F002A7C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E80C03A2541969F002A7C15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +84,6 @@
 		8E80C05C254196A1002A7C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E80C06A25469D86002A7C15 /* MGoogleAdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGoogleAdsViewController.swift; sourceTree = "<group>"; };
 		8E80C06C2546B861002A7C15 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8E80C077254C153E002A7C15 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "../../../Downloads/mapbox-ios-sdk-dynamic-with-events/dynamic/Mapbox.framework"; sourceTree = "<group>"; };
-		8E80C079254C1548002A7C15 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapboxMobileEvents.framework; path = "../../../Downloads/mapbox-ios-sdk-dynamic-with-events/dynamic/MapboxMobileEvents.framework"; sourceTree = "<group>"; };
 		8E80C0882553D651002A7C15 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8E80C08A2553DBDE002A7C15 /* MemberCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterViewController.swift; sourceTree = "<group>"; };
 		8E80C08F255A7941002A7C15 /* MailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailLoginViewController.swift; sourceTree = "<group>"; };
@@ -99,9 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E80C07B254C154D002A7C15 /* MapboxMobileEvents.framework in Frameworks */,
+				8E66F38E255D146B0090E131 /* MapboxMobileEvents.framework in Frameworks */,
 				B467E3AAF3D674133F6C2D48 /* Pods_siege.framework in Frameworks */,
-				8E80C07E254C154E002A7C15 /* Mapbox.framework in Frameworks */,
+				8E66F38C255D14680090E131 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +173,9 @@
 		8E80C0372541969F002A7C15 /* siege */ = {
 			isa = PBXGroup;
 			children = (
+				8E66F388255D13D50090E131 /* Mapbox.framework */,
+				8E66F389255D13D50090E131 /* MapboxMobileEvents.framework */,
 				8E80C0882553D651002A7C15 /* MapViewController.swift */,
-				8E80C079254C1548002A7C15 /* MapboxMobileEvents.framework */,
-				8E80C077254C153E002A7C15 /* Mapbox.framework */,
 				8E80C0382541969F002A7C15 /* AppDelegate.swift */,
 				8E80C03A2541969F002A7C15 /* SceneDelegate.swift */,
 				8E80C03C2541969F002A7C15 /* ViewController.swift */,
