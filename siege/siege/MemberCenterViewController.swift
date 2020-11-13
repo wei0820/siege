@@ -38,7 +38,11 @@ class MemberCenterViewController: MGooogleAdsViewController {
                  let defaultAction = UIAlertAction(title: "發生錯誤", style: .cancel, handler: nil)
                  alert.addAction(defaultAction)
                  self.present(alert, animated: true, completion: nil)
-             }
+             }else{
+                self.isNoLoginView.isHidden = true
+                self.isMailLoginView.isHidden = true
+                self.isMailLoginDatView.isHidden = false
+            }
          }
     }
     
