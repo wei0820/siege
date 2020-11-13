@@ -333,17 +333,12 @@
                             <constraint firstItem="UWy-7F-MTw" firstAttribute="top" secondItem="pCZ-Q7-wIw" secondAttribute="top" constant="20" id="xdg-8Z-RYM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pCZ-Q7-wIw"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="itD-ky-qHI"/>
-                                <exclude reference="UWy-7F-MTw"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="emailLoginTextField" destination="H6a-rl-uIy" id="4hO-fU-n1Y"/>
                         <outlet property="idLabel" destination="HOK-74-YT7" id="UCN-7X-Rvd"/>
                         <outlet property="isMailLoginButton" destination="f8H-eL-zH5" id="Egt-is-3F8"/>
+                        <outlet property="isMailLoginDatView" destination="V37-gI-9J6" id="edv-cr-bS8"/>
                         <outlet property="isMailLoginView" destination="UWy-7F-MTw" id="Iic-GT-e6O"/>
                         <outlet property="isNoLoginView" destination="itD-ky-qHI" id="uOT-Nw-bjr"/>
                         <outlet property="mailLabel" destination="FRd-qi-17M" id="KTT-WF-Zr8"/>

@@ -15,6 +15,7 @@ class MemberCenterViewController: MGooogleAdsViewController {
     
     @IBOutlet weak var idLabel: UILabel!
     
+    @IBOutlet weak var isMailLoginDatView: UIView!
     @IBOutlet weak var mailLabel: UILabel!
     @IBOutlet weak var isNoLoginView: UIView!
     @IBOutlet weak var isMailLoginButton: UIButton!
@@ -33,8 +34,8 @@ class MemberCenterViewController: MGooogleAdsViewController {
     @IBAction func loginAction(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailLoginTextField.text!, password: passwordLoginTextField.text!) { (user, error) in
              if (error != nil) {
-                 let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
-                 let defaultAction = UIAlertAction(title: "Error", style: .cancel, handler: nil)
+                 let alert = UIAlertController(title: "發生錯誤", message: error?.localizedDescription, preferredStyle: .alert)
+                 let defaultAction = UIAlertAction(title: "發生錯誤", style: .cancel, handler: nil)
                  alert.addAction(defaultAction)
                  self.present(alert, animated: true, completion: nil)
              }
@@ -43,6 +44,8 @@ class MemberCenterViewController: MGooogleAdsViewController {
     
     @IBAction func isMailLogin(_ sender: Any) {
         isNoLoginView.isHidden = true
+        isMailLoginView.isHidden = false
+        isMailLoginDatView.isHidden = true
     }
     
     
@@ -89,11 +92,13 @@ class MemberCenterViewController: MGooogleAdsViewController {
         
                 self.isNoLoginView.isHidden = true
                 self.isMailLoginView.isHidden = true
-
+            }else{
+                self.isNoLoginView.isHidden = false
+                self.isMailLoginView.isHidden = true
+                self.isMailLoginDatView.isHidden = true
                 
-                
-
             }
+            
         }
     }
     
@@ -147,6 +152,12 @@ class MemberCenterViewController: MGooogleAdsViewController {
     
     
     @IBAction func logoutAction(_ sender: Any) {
+            let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+        }
+          
     }
     
     
