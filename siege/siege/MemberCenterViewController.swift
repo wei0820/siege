@@ -168,6 +168,40 @@ class MemberCenterViewController: MGooogleAdsViewController {
     
         
     @IBAction func deleteAccountAction(_ sender: Any) {
+        
+        let signUpAlert = UIAlertController(title: "刪除帳號", message: "確定刪除此帳號麻？刪除無法復原", preferredStyle: .alert)
+                      let saveAction = UIAlertAction(title: "確定", style: .default) { (action) in
+                        let emailSignUpTextField = signUpAlert.textFields![0]
+
+                         let user = Auth.auth().currentUser
+                        
+                        self.reAuthen(email: (user?.email)!, password: emailSignUpTextField.text!)
+
+                        user?.delete { error in
+                          if let error = error {
+                            print("Jack",error.localizedDescription)
+                          } else {
+                            self.isNoLoginView.isHidden = false
+                              self.isMailLoginView.isHidden = true
+                              self.isMailLoginDatView.isHidden = true
+                            
+                            }
+                        }
+                         
+                   
+                      }
+                      
+                      let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        signUpAlert.addTextField { (emailSignUpTextField) in
+                           emailSignUpTextField.placeholder = "請再輸入一次密碼"
+                       }
+                      signUpAlert.addAction(saveAction)
+                       signUpAlert.addAction(cancelAction)
+
+                      
+                      present(signUpAlert, animated: true, completion: nil)
+        
+        
     }
     
     

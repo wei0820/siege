@@ -678,7 +678,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jackpan.touristmap-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpan.touristmap;
 				PRODUCT_NAME = "我的旅遊地圖";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -701,7 +701,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jackpan.touristmap-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jackpan.touristmap;
 				PRODUCT_NAME = "我的旅遊地圖";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
