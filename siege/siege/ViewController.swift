@@ -15,7 +15,16 @@ class ViewController: MGooogleAdsViewController {
         setLeftButton(s: "會員中心")
         setRightButton(s: "地圖")
     
-        
+        let path = Bundle.main.path(forResource: "data", ofType: "json")
+        let loaclData = NSData.init(contentsOfFile: path!)! as Data
+           do {
+               let students = try JSONDecoder().decode(DateJson.self, from: loaclData)
+            print("Jack\(students.list[0].item)")
+               
+           } catch {
+               debugPrint("student===ERROR")
+               // 异常处理
+           }
             
     }
     func setRightButton(s: String){
