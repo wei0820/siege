@@ -15,6 +15,8 @@
 		8E66F3912563A68C0090E131 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E66F3902563A68C0090E131 /* data.json */; };
 		8E66F3932563A77D0090E131 /* DateJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66F3922563A77D0090E131 /* DateJson.swift */; };
 		8E66F3952564F2440090E131 /* SixCityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66F3942564F2440090E131 /* SixCityListViewController.swift */; };
+		8E66F397256640B90090E131 /* OtherCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66F396256640B90090E131 /* OtherCityViewController.swift */; };
+		8E66F399256640F80090E131 /* OutsideCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66F398256640F80090E131 /* OutsideCityViewController.swift */; };
 		8E80C0392541969F002A7C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C0382541969F002A7C15 /* AppDelegate.swift */; };
 		8E80C03B2541969F002A7C15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C03A2541969F002A7C15 /* SceneDelegate.swift */; };
 		8E80C03D2541969F002A7C15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C03C2541969F002A7C15 /* ViewController.swift */; };
@@ -74,6 +76,8 @@
 		8E66F3902563A68C0090E131 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		8E66F3922563A77D0090E131 /* DateJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateJson.swift; sourceTree = "<group>"; };
 		8E66F3942564F2440090E131 /* SixCityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixCityListViewController.swift; sourceTree = "<group>"; };
+		8E66F396256640B90090E131 /* OtherCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCityViewController.swift; sourceTree = "<group>"; };
+		8E66F398256640F80090E131 /* OutsideCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutsideCityViewController.swift; sourceTree = "<group>"; };
 		8E80C0352541969F002A7C15 /* 我的旅遊地圖.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我的旅遊地圖.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E80C0382541969F002A7C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E80C03A2541969F002A7C15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +199,8 @@
 				8E80C08A2553DBDE002A7C15 /* MemberCenterViewController.swift */,
 				8E66F3902563A68C0090E131 /* data.json */,
 				8E66F3942564F2440090E131 /* SixCityListViewController.swift */,
+				8E66F396256640B90090E131 /* OtherCityViewController.swift */,
+				8E66F398256640F80090E131 /* OutsideCityViewController.swift */,
 			);
 			path = siege;
 			sourceTree = "<group>";
@@ -501,8 +507,10 @@
 				8E80C06B25469D86002A7C15 /* MGoogleAdsViewController.swift in Sources */,
 				8E66F3952564F2440090E131 /* SixCityListViewController.swift in Sources */,
 				8E80C0892553D651002A7C15 /* MapViewController.swift in Sources */,
+				8E66F399256640F80090E131 /* OutsideCityViewController.swift in Sources */,
 				8E80C08B2553DBDE002A7C15 /* MemberCenterViewController.swift in Sources */,
 				8E80C03B2541969F002A7C15 /* SceneDelegate.swift in Sources */,
+				8E66F397256640B90090E131 /* OtherCityViewController.swift in Sources */,
 				8E80C090255A7941002A7C15 /* MailLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

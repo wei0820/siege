@@ -26,6 +26,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <state key="normal" title="六都快選"/>
+                                        <connections>
+                                            <action selector="sixCityAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FOS-Hi-da9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -446,28 +449,69 @@
             </objects>
             <point key="canvasLocation" x="482" y="-774"/>
         </scene>
-        <!--View Controller-->
+        <!--Six City List View Controller-->
         <scene sceneID="ND4-tJ-UNI">
             <objects>
-                <viewController id="HDA-cF-Jah" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sixcity" modalPresentationStyle="fullScreen" id="HDA-cF-Jah" customClass="SixCityListViewController" customModule="我的旅遊地圖" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DI7-kX-MCY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tEx-RZ-UO8">
-                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <rect key="frame" x="16" y="70" width="343" height="577"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Laf-VR-anN" style="IBUITableViewCellStyleDefault" id="bgt-Jo-rC1">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bgt-Jo-rC1" id="gEw-O7-k0e">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Laf-VR-anN">
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HDA-cF-Jah" id="zTa-Q3-fX5"/>
+                                    <outlet property="delegate" destination="HDA-cF-Jah" id="FiK-km-o20"/>
+                                </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w5-AC-e36">
+                                <rect key="frame" x="330" y="20" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="XHF-J7-tyW"/>
+                                    <constraint firstAttribute="width" constant="29" id="grM-fa-l1u"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icon_exit"/>
+                                <connections>
+                                    <action selector="dissviewAction:" destination="HDA-cF-Jah" eventType="touchUpInside" id="6bQ-fb-eUc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="tEx-RZ-UO8" firstAttribute="leading" secondItem="tXf-LO-ubn" secondAttribute="leading" constant="16" id="3XS-LP-zPs"/>
                             <constraint firstItem="tXf-LO-ubn" firstAttribute="trailing" secondItem="tEx-RZ-UO8" secondAttribute="trailing" constant="16" id="Bb7-8d-Sfm"/>
                             <constraint firstItem="tXf-LO-ubn" firstAttribute="bottom" secondItem="tEx-RZ-UO8" secondAttribute="bottom" constant="20" id="UJv-c0-UVr"/>
-                            <constraint firstItem="tEx-RZ-UO8" firstAttribute="top" secondItem="tXf-LO-ubn" secondAttribute="top" constant="20" id="hzO-TE-aOb"/>
+                            <constraint firstItem="tXf-LO-ubn" firstAttribute="trailing" secondItem="1w5-AC-e36" secondAttribute="trailing" constant="16" id="cfy-MV-8Oh"/>
+                            <constraint firstItem="tEx-RZ-UO8" firstAttribute="top" secondItem="tXf-LO-ubn" secondAttribute="top" constant="70" id="hzO-TE-aOb"/>
+                            <constraint firstItem="1w5-AC-e36" firstAttribute="top" secondItem="tXf-LO-ubn" secondAttribute="top" constant="20" id="mLY-0D-KNC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tXf-LO-ubn"/>
                     </view>
+                    <connections>
+                        <outlet property="dissview" destination="1w5-AC-e36" id="gxG-mk-mVJ"/>
+                        <outlet property="tabview" destination="tEx-RZ-UO8" id="flL-5r-hBo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YhV-Sn-kSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -479,6 +523,7 @@
         <image name="baseline_email_black_36pt_2x" width="72" height="72"/>
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="clear.fill" catalog="system" width="128" height="114"/>
+        <image name="icon_exit" width="24" height="24"/>
         <image name="logo" width="1024" height="1024"/>
         <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
     </resources>

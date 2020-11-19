@@ -60,6 +60,13 @@ class ViewController: MGooogleAdsViewController {
         setJump(type: "member")
 
     }
+    
+    
+    @IBAction func sixCityAction(_ sender: Any) {
+        setJump(type: "sixcity")
+    }
+    
+    
 
 }
 
