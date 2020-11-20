@@ -66,6 +66,15 @@ class ViewController: MGooogleAdsViewController {
         setJump(type: "sixcity")
     }
     
+    @IBAction func OtherCityAction(_ sender: Any) {
+        setJump(type: "othercity")
+    }
+    
+    @IBAction func OutsideCityAction(_ sender: Any) {
+        setJump(type: "outsidecity")
+
+    }
+    
     
 
 }

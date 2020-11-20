@@ -52,6 +52,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="其他縣市"/>
+                                        <connections>
+                                            <action selector="OtherCityAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="blp-mo-Oph"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -75,6 +78,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="離島縣市"/>
+                                        <connections>
+                                            <action selector="OutsideCityAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4aH-A3-hXe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -515,7 +521,143 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YhV-Sn-kSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="685.60000000000002" y="-63.418290854572717"/>
+            <point key="canvasLocation" x="902" y="-83"/>
+        </scene>
+        <!--Other City View Controller-->
+        <scene sceneID="Nx2-LA-8aS">
+            <objects>
+                <viewController storyboardIdentifier="othercity" modalPresentationStyle="fullScreen" id="Aqt-Gd-bxb" customClass="OtherCityViewController" customModule="我的旅遊地圖" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wPU-Bf-ub5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BFB-Xa-w8F">
+                                <rect key="frame" x="16" y="70" width="343" height="577"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="MDL-gm-Pas" style="IBUITableViewCellStyleDefault" id="QKf-jQ-fx7">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QKf-jQ-fx7" id="G0r-ac-4eK">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MDL-gm-Pas">
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Aqt-Gd-bxb" id="A1G-3C-1U5"/>
+                                    <outlet property="delegate" destination="Aqt-Gd-bxb" id="x3k-1h-ied"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kc-Ds-T6h">
+                                <rect key="frame" x="330" y="20" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="UXD-V7-xuf"/>
+                                    <constraint firstAttribute="height" constant="24" id="eO4-VG-vft"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icon_exit"/>
+                                <connections>
+                                    <action selector="dissviewAction:" destination="Aqt-Gd-bxb" eventType="touchUpInside" id="PVy-Cv-8uS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5kc-Ds-T6h" firstAttribute="top" secondItem="JzW-fk-phH" secondAttribute="top" constant="20" id="5r9-BX-vrg"/>
+                            <constraint firstItem="JzW-fk-phH" firstAttribute="trailing" secondItem="5kc-Ds-T6h" secondAttribute="trailing" constant="16" id="AQY-Kq-8rF"/>
+                            <constraint firstItem="BFB-Xa-w8F" firstAttribute="top" secondItem="JzW-fk-phH" secondAttribute="top" constant="70" id="ElN-fi-CUY"/>
+                            <constraint firstItem="BFB-Xa-w8F" firstAttribute="leading" secondItem="JzW-fk-phH" secondAttribute="leading" constant="16" id="SZ5-sc-D0Z"/>
+                            <constraint firstItem="JzW-fk-phH" firstAttribute="trailing" secondItem="BFB-Xa-w8F" secondAttribute="trailing" constant="16" id="eJ1-pd-Mye"/>
+                            <constraint firstItem="JzW-fk-phH" firstAttribute="bottom" secondItem="BFB-Xa-w8F" secondAttribute="bottom" constant="20" id="jai-nW-61K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JzW-fk-phH"/>
+                    </view>
+                    <connections>
+                        <outlet property="dissview" destination="5kc-Ds-T6h" id="P4V-2a-Nhc"/>
+                        <outlet property="tabview" destination="BFB-Xa-w8F" id="QTJ-gB-x7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBt-qr-bJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-641" y="830"/>
+        </scene>
+        <!--Outside City View Controller-->
+        <scene sceneID="ZlP-Pb-eDS">
+            <objects>
+                <viewController storyboardIdentifier="outsidecity" modalPresentationStyle="fullScreen" id="mV9-1c-SrE" customClass="OutsideCityViewController" customModule="我的旅遊地圖" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iX7-7R-P5R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQE-4s-6eJ">
+                                <rect key="frame" x="16" y="70" width="343" height="577"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="i1R-eZ-USb" style="IBUITableViewCellStyleDefault" id="ISM-aV-LJU">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ISM-aV-LJU" id="ozT-yH-P0y">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i1R-eZ-USb">
+                                                    <rect key="frame" x="15" y="0.0" width="313" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mV9-1c-SrE" id="KCT-Gz-Hlu"/>
+                                    <outlet property="delegate" destination="mV9-1c-SrE" id="les-CZ-L3y"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsG-Ya-aX7">
+                                <rect key="frame" x="330" y="20" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="BzY-FS-hDu"/>
+                                    <constraint firstAttribute="width" constant="29" id="qhB-sP-5BB"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icon_exit"/>
+                                <connections>
+                                    <action selector="dissviewAction:" destination="mV9-1c-SrE" eventType="touchUpInside" id="EIY-Db-4gQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YQE-4s-6eJ" firstAttribute="top" secondItem="Ylm-Tn-qEI" secondAttribute="top" constant="70" id="82R-31-6pq"/>
+                            <constraint firstItem="Ylm-Tn-qEI" firstAttribute="bottom" secondItem="YQE-4s-6eJ" secondAttribute="bottom" constant="20" id="Baw-8n-7AN"/>
+                            <constraint firstItem="PsG-Ya-aX7" firstAttribute="top" secondItem="Ylm-Tn-qEI" secondAttribute="top" constant="20" id="Fdx-KS-0z1"/>
+                            <constraint firstItem="Ylm-Tn-qEI" firstAttribute="trailing" secondItem="YQE-4s-6eJ" secondAttribute="trailing" constant="16" id="gHo-k5-OC0"/>
+                            <constraint firstItem="Ylm-Tn-qEI" firstAttribute="trailing" secondItem="PsG-Ya-aX7" secondAttribute="trailing" constant="16" id="oIY-KN-JeH"/>
+                            <constraint firstItem="YQE-4s-6eJ" firstAttribute="leading" secondItem="Ylm-Tn-qEI" secondAttribute="leading" constant="16" id="qFk-TM-hA4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ylm-Tn-qEI"/>
+                    </view>
+                    <connections>
+                        <outlet property="dissview" destination="PsG-Ya-aX7" id="lXd-0n-lNZ"/>
+                        <outlet property="tabview" destination="YQE-4s-6eJ" id="pLj-Ek-5Q9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEj-HV-iYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="848"/>
         </scene>
     </scenes>
     <resources>
