@@ -1,17 +1,19 @@
 //
-//  SixCityListViewController.swift
+//  TaipeiPageViewController.swift
 //  siege
 //
-//  Created by oneplay on 2020/11/18.
+//  Created by oneplay on 2020/11/27.
 //  Copyright © 2020 JackPan. All rights reserved.
 //
 
 import UIKit
 
-class SixCityListViewController: MGooogleAdsViewController ,UITableViewDataSource, UITableViewDelegate {
+class TaipeiPageViewController: MGooogleAdsViewController  ,UITableViewDataSource, UITableViewDelegate {
+    
     @IBOutlet weak var tabview: UITableView!
     var itemName:Array<String> = Array()
-    var name :String = ""
+    var name : String   = "" 
+    var detail :String = ""
     
     @IBOutlet weak var dissview: UIButton!
     
@@ -34,35 +36,35 @@ class SixCityListViewController: MGooogleAdsViewController ,UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(
             at: indexPath, animated: true)
-    
-        performSegue(withIdentifier: "Taipeipage", sender: self)
+        name = itemName[indexPath.row]
+//        performSegue(withIdentifier: "stockdetail", sender: nil)
 
 
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Taipeipage"{
-            if let index = tabview.indexPathForSelectedRow{
-                let secondCV = segue.destination as! TaipeiPageViewController
-                secondCV.detail = itemName[index.row]
-            
 
-            }
-
-
-        }
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        itemName.append("台北市")
-        itemName.append("新北市")
-        itemName.append("桃園市")
-        itemName.append("台中市")
-        itemName.append("台南市")
-        itemName.append("高雄市")
+        itemName.append("基隆市")
+        itemName.append("新竹市")
+        itemName.append("新竹縣")
+        itemName.append("苗栗縣")
+        itemName.append("彰化縣")
+        itemName.append("南投縣")
+        itemName.append("雲林縣")
+        itemName.append("嘉義縣")
+        itemName.append("嘉義市")
+        itemName.append("屏東縣")
+        itemName.append("宜蘭縣")
+        itemName.append("花蓮縣")
+        itemName.append("台東縣")
 
+        
+        print("Jack","ts:"+detail)
 
         
     }
