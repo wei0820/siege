@@ -45,7 +45,7 @@ class SixCityListViewController: MGooogleAdsViewController ,UITableViewDataSourc
         if segue.identifier == "Taipeipage"{
             if let index = tabview.indexPathForSelectedRow{
                 let secondCV = segue.destination as! TaipeiPageViewController
-                secondCV.detail = itemName[index.row]
+                secondCV.detail = String(index.row)
             
 
             }

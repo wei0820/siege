@@ -11,7 +11,7 @@ import UIKit
 class TaipeiPageViewController: MGooogleAdsViewController  ,UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tabview: UITableView!
-    var itemName:Array<String> = Array()
+    var itemName = ["1","2","3","4","5","6"]
     var name : String   = "" 
     var detail :String = ""
     
@@ -49,21 +49,6 @@ class TaipeiPageViewController: MGooogleAdsViewController  ,UITableViewDataSourc
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        itemName.append("基隆市")
-        itemName.append("新竹市")
-        itemName.append("新竹縣")
-        itemName.append("苗栗縣")
-        itemName.append("彰化縣")
-        itemName.append("南投縣")
-        itemName.append("雲林縣")
-        itemName.append("嘉義縣")
-        itemName.append("嘉義市")
-        itemName.append("屏東縣")
-        itemName.append("宜蘭縣")
-        itemName.append("花蓮縣")
-        itemName.append("台東縣")
-
-        
         print("Jack","ts:"+detail)
 
         
