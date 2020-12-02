@@ -32,6 +32,7 @@
 		8E80C08B2553DBDE002A7C15 /* MemberCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C08A2553DBDE002A7C15 /* MemberCenterViewController.swift */; };
 		8E80C090255A7941002A7C15 /* MailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80C08F255A7941002A7C15 /* MailLoginViewController.swift */; };
 		8EC7AFDF2574FAE400847519 /* OutsideCityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7AFDE2574FAE400847519 /* OutsideCityListViewController.swift */; };
+		8EC7AFE12577646D00847519 /* OtherCityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7AFE02577646D00847519 /* OtherCityListViewController.swift */; };
 		A410852D8765DE399B0FE184 /* Pods_siegeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */; };
 		B467E3AAF3D674133F6C2D48 /* Pods_siege.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4C694F8D03E6E49BA7B113 /* Pods_siege.framework */; };
 /* End PBXBuildFile section */
@@ -101,6 +102,7 @@
 		8E80C08A2553DBDE002A7C15 /* MemberCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCenterViewController.swift; sourceTree = "<group>"; };
 		8E80C08F255A7941002A7C15 /* MailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailLoginViewController.swift; sourceTree = "<group>"; };
 		8EC7AFDE2574FAE400847519 /* OutsideCityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutsideCityListViewController.swift; sourceTree = "<group>"; };
+		8EC7AFE02577646D00847519 /* OtherCityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherCityListViewController.swift; sourceTree = "<group>"; };
 		9BCBE15F538A0CEC03781B37 /* Pods_siegeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siegeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCAA5A3A5ED7E0A738E200E /* Pods-siege-siegeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege-siegeUITests.release.xcconfig"; path = "Target Support Files/Pods-siege-siegeUITests/Pods-siege-siegeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1929A7321C3C929141AE33C /* Pods-siege.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siege.debug.xcconfig"; path = "Target Support Files/Pods-siege/Pods-siege.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				8E66F398256640F80090E131 /* OutsideCityViewController.swift */,
 				8E66F3A02570D3D70090E131 /* TaipeiPageViewController.swift */,
 				8EC7AFDE2574FAE400847519 /* OutsideCityListViewController.swift */,
+				8EC7AFE02577646D00847519 /* OtherCityListViewController.swift */,
 			);
 			path = siege;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				8E80C0892553D651002A7C15 /* MapViewController.swift in Sources */,
 				8E66F399256640F80090E131 /* OutsideCityViewController.swift in Sources */,
 				8E80C08B2553DBDE002A7C15 /* MemberCenterViewController.swift in Sources */,
+				8EC7AFE12577646D00847519 /* OtherCityListViewController.swift in Sources */,
 				8E80C03B2541969F002A7C15 /* SceneDelegate.swift in Sources */,
 				8E66F397256640B90090E131 /* OtherCityViewController.swift in Sources */,
 				8E80C090255A7941002A7C15 /* MailLoginViewController.swift in Sources */,
