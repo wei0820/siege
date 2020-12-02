@@ -1,17 +1,23 @@
 //
-//  OutsideCityViewController.swift
+//  OutsideCityListViewController.swift
 //  siege
 //
-//  Created by oneplay on 2020/11/19.
+//  Created by oneplay on 2020/11/30.
 //  Copyright © 2020 JackPan. All rights reserved.
 //
 
 import UIKit
 
-class OutsideCityViewController: MGooogleAdsViewController ,UITableViewDataSource, UITableViewDelegate {
+class OutsideCityListViewController: MGooogleAdsViewController  ,UITableViewDataSource, UITableViewDelegate {
+    
     @IBOutlet weak var tabview: UITableView!
-    var itemName:Array<String> = Array()
-    var name :String = ""
+    var itemName = ["",""]
+    var string = ["七美鄉","白沙鄉","西嶼鄉","馬公市","望安鄉","湖西鄉"]
+    var string2 = ["金沙鎮","金城鎮","金湖鎮","金寧鄉","烈嶼鄉"]
+    var string3 = ["南竿鄉","東引鄉"]
+    
+    var name : String   = ""
+    var detail :String = ""
     
     @IBOutlet weak var dissview: UIButton!
     
@@ -35,37 +41,36 @@ class OutsideCityViewController: MGooogleAdsViewController ,UITableViewDataSourc
         tableView.deselectRow(
             at: indexPath, animated: true)
         name = itemName[indexPath.row]
-        performSegue(withIdentifier: "outlist", sender: self)
-
+//        performSegue(withIdentifier: "stockdetail", sender: nil)
 
 
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "outlist"{
-    if let index = tabview.indexPathForSelectedRow{
-        let secondCV = segue.destination as! OutsideCityListViewController
-        secondCV.detail = String(index.row)
-    
 
-    }
-
-
-}
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        itemName.append("澎湖縣")
-        itemName.append("金門縣")
-        itemName.append("馬祖")
-    
+        print("Jack","ts:"+detail)
+        switch detail {
+        case "0":
+            itemName  = string
+            break
+        case "1" :
+            itemName  = string2
 
+            break
+        case "2" :
+            itemName  = string3
+            break
+        default:
+            itemName   = ["",""]
+        }
 
         
     }
 
 
 }
-
