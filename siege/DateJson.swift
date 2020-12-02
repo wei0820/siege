@@ -15,10 +15,16 @@ struct  DateJson : Codable{
     
 }
 struct list :Codable {
-    var item :String
-    var photo :String
-    var date :String
+    var  districts : [districts]
+    var name : String
 }
+struct districts :Codable {
+    var name : String
+    var zip :String
+
+}
+
+
 func get(){
 
     

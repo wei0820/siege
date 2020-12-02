@@ -35,22 +35,22 @@ class OtherCityViewController: MGooogleAdsViewController ,UITableViewDataSource,
         tableView.deselectRow(
             at: indexPath, animated: true)
         name = itemName[indexPath.row]
-//        performSegue(withIdentifier: "stockdetail", sender: nil)
+        performSegue(withIdentifier: "other", sender: self)
 
 
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "stockdetail"{
-//            if let index = tableview.indexPathForSelectedRow{
-//                let secondCV = segue.destination as! StockDetailViewController
-//                secondCV.detail =  itemName[index.row].detail
-//
-//            }
-//
-//
-//        }
+        if segue.identifier == "other"{
+            if let index = tabview.indexPathForSelectedRow{
+                let secondCV = segue.destination as! OtherCityListViewController
+                secondCV.detail = String(index.row)
+
+            }
+
+
+        }
         
     }
     override func viewDidLoad() {
